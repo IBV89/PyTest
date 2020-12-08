@@ -7,7 +7,6 @@ class Value:
 
     def __set__(self, instance, value):
         self.amount = int(value - (value * instance.commission))
-        return self.amount
 
 
 class Account:
