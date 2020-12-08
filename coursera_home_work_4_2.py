@@ -10,7 +10,7 @@ class Value:
         return self.amount
 
 
-class Accaunt:
+class Account:
     amount = Value()
 
     def __init__(self, commission):
