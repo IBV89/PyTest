@@ -19,7 +19,6 @@ class Client:
     def put(self, name_serv, count_serv, timestamp=None):
         stamp = timestamp or int(time.time())
         send_data = f'put {name_serv} {count_serv} {stamp}\n'.encode('utf-8')
-
         try:
             self._sock.send(send_data)
             response = self._sock.recv(1024)
